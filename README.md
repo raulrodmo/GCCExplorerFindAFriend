@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Ao entrar na aplicação, a pessoa adotante pode filtrar os bichinhos de acordo com suas preferências e lifestyle.
 Depois é só entrar em contato com a ONG para agendar uma visita e conhecer pessoalmente seu match perfeito!
 
-- [Visite o projeto online]()
+- [Visite o projeto online](https://findafriend-raulrodmo.netlify.app/)
 
 ## 🔖 Layout
 
