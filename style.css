@@ -1,0 +1,177 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito';
+  color: var(--text-color);
+}
+
+:root{
+  font-size: 62.5%;
+  --background-primary:#F15156;
+  --text-color: #ffffff;
+  --text-color-acessButton: #0D3B66;
+  --background-bodyNavigation: linear-gradient(#F36A6F, #E44449);
+  --background-buttons: #ffffff;
+  --background-secondary: #E44449;
+}
+
+body{
+  background: var(--background-primary);
+}
+
+header{
+  height: 8rem;
+  background: var(--background-secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo{
+  width: 12.5rem;
+  height: 3.25rem;
+  margin-left: 2rem;
+}
+
+.buttonOpenMenu{
+  width: 4rem;
+  height: 4rem;
+  margin-right: 2rem;
+  border: none;
+  border-radius: 8.33px;
+
+  cursor: pointer;
+}
+
+.buttonCloseMenu{
+  width: 4rem;
+  height: 4rem;
+  margin-right: 2rem;
+  border: none;
+  border-radius: 8.33px;
+
+  cursor: pointer;
+}
+
+.buttonOpenMenu .openMenu{
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.buttonCloseMenu .closeMenu{
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+nav{
+  height: 20.3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  background: var(--background-secondary);
+  border-radius: 0px 0px 20px 20px;
+}
+
+nav div{
+  margin: 0 2.5rem 1.5rem 2.5rem;
+  border: 1px solid #FFFFFF;
+}
+
+nav a{
+  margin-left: 2rem;
+
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.98rem;
+  letter-spacing: -0.02em;
+  opacity: 0.5;
+}
+
+nav a:hover{
+  opacity: 1;
+}
+
+main{
+  margin-top: 5.2rem;
+  margin-left: 2rem;
+}
+
+.friendsInCity p{
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.68rem;
+}
+
+.friendsInCity p span{
+  font-weight: bold;
+}
+
+.textBody h1{
+  width: 26.8rem;
+  margin-top: 3.5rem;
+
+  font-size: 4.4rem;
+  font-weight: 700;
+  line-height: 4.8rem;
+  letter-spacing: -0.02em;
+}
+
+.containers{
+  margin-left: -2rem;
+  margin-top: 5.5rem;
+  display: flex;
+  justify-content: space-between;}
+
+.containerOne{
+  width: 2rem;
+  height: 25.5rem;
+  background: var(--background-secondary);
+  border-radius: 0 20px 20px 0;
+}
+
+.containerTwo{
+  width: 27.9rem;
+  height: 25.5rem;
+  background: var(--background-bodyNavigation);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.containerTwo .imgPet{
+  width: 23.9rem;
+  height: 27.7rem;
+
+  position: relative;
+  bottom: 2.2rem;
+}
+
+.containerTwo .acess{
+  width: 23.9rem;
+  height: 5.5rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.5rem;
+  color: var(--text-color-acessButton);
+
+  border: none;
+  border-radius: 8.66px;
+  position: relative;
+  bottom: 10rem;
+
+  cursor: pointer;
+}
+
+.containerThree{
+  width: 2rem;
+  height: 25.5rem;
+  background: var(--background-secondary);
+  border-radius: 20px 0 0 20px;
+}
+
+.hide{
+  display: none;
+}
