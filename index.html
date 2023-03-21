@@ -20,28 +20,30 @@
 <body>
   <header>
       <img src="./assets/logo.svg" alt="logo Find A Friend" class="logo">
-  
-      <button class="buttonOpenMenu">
-        <img src="./assets/openMenu.svg" alt="Botão do menu" class="openMenu">
-      </button>
-      <button class="buttonCloseMenu hide">
-        <img src="./assets/closeMenu.svg" alt="Botão de fechar o menu" class="closeMenu">
-      </button>
+      <div>
+        <button class="buttonOpenMenu ">
+          <img src="./assets/openMenu.svg" alt="Botão do menu" class="openMenu">
+        </button>
+        
+        <button class="buttonCloseMenu hide">
+          <img src="./assets/closeMenu.svg" alt="Botão de fechar o menu" class="closeMenu">
+        </button>
+        
+        <div class="navMenu hide">
+          <div class="line"></div>
+
+          <a href="">Home</a>
+          <a href="">Sobre o app</a>
+          <a href="">Animais disponíveis</a>
+          <a href="">Sobre a FindAFriend</a>
+          <a href="">Contato</a>
+        </div>
+
+      </div>
   </header>
 
-  <nav class="navMenu hide">
-
-       <a href="">Home</a>
-       <a href="">Sobre o app</a>
-       <a href="">Animais disponíveis</a>
-       <a href="">Sobre a FindAFriend</a>
-       <a href="">Contato</a>
-     </div>
-  </nav>
-
   <main id="page">
-    <div class="home">
-      <div>
+      <div class="home">
         <div class="friendsInCity">
           <img src="./assets/logo.svg" alt="logo Find A Friend" class="logo hide">
           <img src="./assets/friendInCity.svg" alt="imagem dos amigos na sua cidade">
@@ -50,29 +52,27 @@
         
         <div class="textBody">
           <h1>Leve a felicidade para o seu lar</h1>
-          <p class="hide">Encontre o animal de estimação ideal para seu estilo de vida</p>
+          <p>Encontre o animal de estimação ideal para seu estilo de vida</p>
         </div>
       </div>
       
       <div class="containers">
         <div class="containerOne"></div>
 
-        <div class="bodyNavigation containerTwo">
+        <div class="bodyNavigation containerTwo ">
           <img src="./assets/pet.png" alt="imagem de um cachorro" class="imgPet">
-          <button class="acess">Acesse agora</button>
+          <div class="button">
+            <button class="acess">Acesse agora</button>
+          </div>
         </div>
         
         <div class="containerThree"></div>
 
-        <div class="containerFour hide">
-          <button class="acess">Acesse agora</button>
-        </div>
+        <div class="containerFour"></div>
 
-        <div class="containerFive hide">
-        </div>
+        <div class="containerFive"></div>
 
         <div class="containerSix hide"></div>
-
       </div>
 
   </main>

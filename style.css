@@ -34,53 +34,50 @@ header .logo{
   margin-left: 2rem;
 }
 
-.buttonOpenMenu{
+header button{
   width: 4rem;
   height: 4rem;
   margin-right: 2rem;
   border: none;
   border-radius: 8.33px;
 
-  cursor: pointer;
-}
-
-.buttonCloseMenu{
-  width: 4rem;
-  height: 4rem;
-  margin-right: 2rem;
-  border: none;
-  border-radius: 8.33px;
+  background: var(--background-buttons);
 
   cursor: pointer;
 }
 
-.buttonOpenMenu .openMenu{
+header button:hover{
+  transform: scale(1.1);
+  opacity: .92;
+}
+header button img{
   width: 1.6rem;
   height: 1.6rem;
 }
 
-.buttonCloseMenu .closeMenu{
-  width: 1.6rem;
-  height: 1.6rem;
-}
-
-nav{
+.navMenu{
+  width: 100vw;
   height: 20.3rem;
+
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
 
   background: var(--background-secondary);
   border-radius: 0px 0px 20px 20px;
+
+  position: absolute;
+  left: 0;
 }
 
-nav div{
-  margin: 0 2.5rem 1.5rem 2.5rem;
+.navMenu div{
+  margin: .5rem 2.5rem 1.5rem 2.5rem;
   border: 1px solid #FFFFFF;
 }
 
-nav a{
+.navMenu a{
   margin-left: 2rem;
+  margin-right: 2rem;
 
   text-decoration: none;
   font-size: 1.8rem;
@@ -90,13 +87,14 @@ nav a{
   opacity: 0.5;
 }
 
-nav a:hover{
+.navMenu a:hover{
+  transform: scale(1.03);
   opacity: 1;
 }
 
 main{
-  margin-top: 5.2rem;
-  margin-left: 2rem;
+  padding-top: 5.2rem;
+  padding-left: 2rem;
 }
 
 .friendsInCity p{
@@ -107,7 +105,7 @@ main{
 }
 
 .friendsInCity p span{
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .textBody h1{
@@ -120,6 +118,10 @@ main{
   letter-spacing: -0.02em;
 }
 
+.textBody p{
+  display: none;
+}
+
 .containers{
   margin-left: -2rem;
   margin-top: 5.5rem;
@@ -127,7 +129,7 @@ main{
   justify-content: space-between;}
 
 .containerOne{
-  width: 2rem;
+  width: 20vw;
   height: 25.5rem;
   background: var(--background-secondary);
   border-radius: 0 20px 20px 0;
@@ -136,9 +138,12 @@ main{
 .containerTwo{
   width: 27.9rem;
   height: 25.5rem;
+  margin: 0 2rem;
   background: var(--background-bodyNavigation);
   border-radius: 20px;
   text-align: center;
+
+  transition-duration: 700ms;
 }
 
 .containerTwo .imgPet{
@@ -147,6 +152,7 @@ main{
 
   position: relative;
   bottom: 2.2rem;
+  z-index: 0;
 }
 
 .containerTwo .acess{
@@ -165,13 +171,241 @@ main{
   cursor: pointer;
 }
 
+.containerTwo .acess:hover{
+  opacity: .92;
+}
+
 .containerThree{
-  width: 2rem;
+  width: 20vw;
   height: 25.5rem;
   background: var(--background-secondary);
   border-radius: 20px 0 0 20px;
 }
 
+.containerFour{
+  display: none;
+  background: var(--background-secondary);
+}
+
+.containerFive{
+  display: none;
+  background: var(--background-secondary);
+}
+
+.containerSix{
+  display: none;
+  background: var(--background-primary);
+}
+
 .hide{
   display: none;
+}
+
+@media (min-width: 680px){
+  header{
+    width: 85rem;
+    max-width: 85rem;
+
+    padding-left: 11.2rem;
+
+    background: none;
+    position: absolute;
+    top: 9.3rem;
+    z-index: 1;
+  }
+
+  header .logo{
+    width: 17.7rem;
+    height: 4.61rem;
+    margin-left: 0;
+  }
+  
+  .navMenu{
+    width: 50rem;
+    height: 52.8rem;
+    padding-top: 15rem;
+
+    position: absolute;
+    top: -2rem;
+    left: 76rem;
+    z-index: -1;
+
+    gap: 1.6rem;
+  }
+
+  .navMenu div{ 
+    display: none;
+  }
+
+  .navMenu a{
+    margin-left: 0;
+
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 3.96rem;
+  }
+
+  #page{
+    width: fit-content;
+    padding-top: 3rem;
+    padding-left: 11.2rem;
+    display: flex;
+    gap: 10.4rem;
+  }
+
+  header button{
+    width: 7.2rem;
+    height: 7.2rem;
+
+    border: none;
+    border-radius: 15px;
+  
+    cursor: pointer;
+  }
+  
+  header button img{
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  main{
+    margin-left: 0;
+  }
+
+  .friendsInCity{
+    margin-top: 20rem;
+
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+    margin-bottom: 7rem;
+    margin-left: 0;
+  }
+
+  .friendsInCity p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.4rem;
+  }
+
+  .textBody h1{
+    width: 51.9rem;
+    margin-top: 7rem;
+  
+    font-size: 7.2rem;
+    font-weight: 700;
+    line-height: 7.92rem;
+  }
+
+  .textBody p{
+    width: 40.7rem;
+    margin-top: 8rem;
+    margin-bottom: 12.2rem;
+
+    display: block;
+
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3.4rem;
+  }
+
+  .containers{
+    display: grid;
+    grid-template-areas: "B A"
+    "C A"
+    "D E";
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+
+  .containers div:nth-child(1){
+    grid-area: A;
+  }
+  
+  .containers div:nth-child(2){
+    grid-area: B;
+  }
+  
+  .containers div:nth-child(3){
+    grid-area: C;
+  }
+  
+  .containers div:nth-child(4){
+    grid-area: D;
+  }
+  
+  .containers div:nth-child(5){
+    grid-area: E;
+  }
+
+  .containers div:nth-child(6){
+    grid-area: B;
+  }
+
+  .containerOne{
+    width: 11.2rem;
+    height: 71.2rem;
+    border-radius: 20px 0 0 20px;
+    right: 0rem;
+  }
+
+  .containerTwo{
+    width: 59.2rem;
+    height: 54.1rem;
+    margin: 0;
+  }
+
+  .containerTwo .imgPet{
+    width: 46.4rem;
+    height: 54.1rem;
+    bottom: 0;
+  }
+
+  .containerTwo .acess{
+    width: 49.2rem;
+    height: 7.2rem;
+    font-size: 2rem;
+    line-height: 3.4rem;
+
+    top: 5.5rem;
+    border-radius: 20px;
+  }
+
+  .containerThree{
+    width: 59.2rem;
+
+    height: 15.2rem;
+    border-radius: 20px;
+    right: 0rem;
+  }
+
+  .containerFour{
+    display: block;
+
+    width: 59.2rem;
+    height: 5.8rem;
+
+    border-radius: 20px 20px 0 0;
+  }
+
+  .containerFive{
+    display: block;
+
+    width: 11.2rem;
+    height: 5.8rem;
+
+    border-radius: 20px 0 0 0;
+  }
+
+  .containerSix{
+    display: block;
+
+    width: 59.2rem;
+    height: 54.1rem;
+    background: var(--background-secondary);
+    border-radius: 20px;
+    text-align: center;
+  }
 }
