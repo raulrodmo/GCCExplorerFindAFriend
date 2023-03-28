@@ -209,8 +209,9 @@ header button img{
 
 .aboutPage h2{
   width: 32rem;
-  margin-top: 7rem;
-  margin-left: 2rem;
+
+  margin: 7rem auto 0;
+
 
   font-size: 3rem;
   font-weight: 700;
@@ -222,10 +223,11 @@ header button img{
   width: 32rem;
   height: 19.7rem;
 
-  margin-top: 2rem;
-  margin-left: 2rem;
-
+  margin: 2rem auto 0;
   padding: 3rem;
+
+  text-align: left;
+
   background: var(--background-div-aboutPage);
   border: 1px solid var(--background-border-div-aboutPage);
   border-radius: 20px;
@@ -251,7 +253,8 @@ header button img{
 }
 
 .aboutPage div{
-  margin-top: 3.6rem;
+  margin: 3.6rem auto 0;
+  text-align: center;
 }
 
 .hide{
