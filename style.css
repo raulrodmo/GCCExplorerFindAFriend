@@ -17,8 +17,9 @@
 
   --text-color-aboutPage: #000000;
   --text-color-aboutPage-h2: #0D3B66;
-  --background-border-div-aboutPage: rgba(241, 81, 86, 0.3);
+  --background-aboutPage: #ffffff;
   --background-div-aboutPage: #FDECED;
+  --background-border-div-aboutPage: rgba(241, 81, 86, 0.3);
 }
 
 header{
@@ -202,8 +203,9 @@ header button img{
   background: var(--background-home-primary);
 }
 
-.aboutHome{
-  background: var(--background-home-buttons);
+.aboutPage{
+  max-width: 143.9rem;
+  background: var(--background-aboutPage);
   color: var(--text-color-aboutPage);
 }
 
