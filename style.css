@@ -3,26 +3,28 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Nunito';
-  color: var(--text-color);
+  color: var(--text-color-home);
 }
 
 :root{
   font-size: 62.5%;
-  --background-primary:#F15156;
-  --text-color: #ffffff;
-  --text-color-acessButton: #0D3B66;
-  --background-bodyNavigation: linear-gradient(#F36A6F, #E44449);
-  --background-buttons: #ffffff;
-  --background-secondary: #E44449;
-}
+  --background-home-primary:#F15156;
+  --background-home-secondary: #E44449;
+  --text-color-home: #ffffff;
+  --text-color-home-acessButton: #0D3B66;
+  --background-home-bodyNavigation: linear-gradient(#F36A6F, #E44449);
+  --background-home-buttons: #ffffff;
 
-body{
-  background: var(--background-primary);
+  --text-color-aboutPage: #000000;
+  --text-color-aboutPage-h2: #0D3B66;
+  --background-border-div-aboutPage: rgba(241, 81, 86, 0.3);
+  --background-div-aboutPage: #FDECED;
 }
 
 header{
   height: 8rem;
-  background: var(--background-secondary);
+
+  background: var(--background-home-secondary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,7 +43,7 @@ header button{
   border: none;
   border-radius: 8.33px;
 
-  background: var(--background-buttons);
+  background: var(--background-home-buttons);
 
   cursor: pointer;
 }
@@ -50,6 +52,7 @@ header button:hover{
   transform: scale(1.1);
   opacity: .92;
 }
+
 header button img{
   width: 1.6rem;
   height: 1.6rem;
@@ -63,7 +66,7 @@ header button img{
   flex-direction: column;
   gap: 1.2rem;
 
-  background: var(--background-secondary);
+  background: var(--background-home-secondary);
   border-radius: 0px 0px 20px 20px;
 
   position: absolute;
@@ -92,9 +95,9 @@ header button img{
   opacity: 1;
 }
 
-main{
-  padding-top: 5.2rem;
+.homePage{
   padding-left: 2rem;
+  background: var(--background-home-primary);
 }
 
 .friendsInCity p{
@@ -126,12 +129,13 @@ main{
   margin-left: -2rem;
   margin-top: 5.5rem;
   display: flex;
-  justify-content: space-between;}
+  justify-content: space-between;
+}
 
 .containerOne{
   width: 20vw;
   height: 25.5rem;
-  background: var(--background-secondary);
+  background: var(--background-home-secondary);
   border-radius: 0 20px 20px 0;
 }
 
@@ -139,7 +143,7 @@ main{
   width: 27.9rem;
   height: 25.5rem;
   margin: 0 2rem;
-  background: var(--background-bodyNavigation);
+  background: var(--background-home-bodyNavigation);
   border-radius: 20px;
   text-align: center;
 
@@ -161,8 +165,8 @@ main{
   font-size: 1.4rem;
   font-weight: 800;
   line-height: 1.5rem;
-  color: var(--text-color-acessButton);
-  background: var(--background-buttons);
+  color: var(--text-color-home-acessButton);
+  background: var(--background-home-buttons);
 
   border: none;
   border-radius: 8.66px;
@@ -179,23 +183,75 @@ main{
 .containerThree{
   width: 20vw;
   height: 25.5rem;
-  background: var(--background-secondary);
+  background: var(--background-home-secondary);
   border-radius: 20px 0 0 20px;
 }
 
 .containerFour{
   display: none;
-  background: var(--background-secondary);
+  background: var(--background-home-secondary);
 }
 
 .containerFive{
   display: none;
-  background: var(--background-secondary);
+  background: var(--background-home-secondary);
 }
 
 .containerSix{
   display: none;
-  background: var(--background-primary);
+  background: var(--background-home-primary);
+}
+
+.aboutHome{
+  background: var(--background-home-buttons);
+  color: var(--text-color-aboutPage);
+}
+
+.aboutPage h2{
+  width: 32rem;
+  margin-top: 7rem;
+  margin-left: 2rem;
+
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 110%;
+  color: var(--text-color-aboutPage-h2);
+}
+
+.aboutPage .container{
+  width: 32rem;
+  height: 19.7rem;
+
+  margin-top: 2rem;
+  margin-left: 2rem;
+
+  padding: 3rem;
+  background: var(--background-div-aboutPage);
+  border: 1px solid var(--background-border-div-aboutPage);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.aboutPage .container p{
+  width: 22.3rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 15.4px;
+  color: var(--text-color-aboutPage);
+}
+
+.aboutPage .container p span{
+  font-weight: 700;
+  color: var(--text-color-aboutPage);
+}
+
+.aboutPage div{
+  margin-top: 3.6rem;
 }
 
 .hide{
@@ -204,10 +260,10 @@ main{
 
 @media (min-width: 680px){
   header{
-    width: 85rem;
-    max-width: 85rem;
+    width: 73rem;
+    max-width: 73rem;
 
-    padding-left: 11.2rem;
+    margin-left: 11.2rem;
 
     background: none;
     position: absolute;
@@ -228,7 +284,7 @@ main{
 
     position: absolute;
     top: -2rem;
-    left: 76rem;
+    left: 68rem;
     z-index: -1;
 
     gap: 1.6rem;
@@ -246,7 +302,7 @@ main{
     line-height: 3.96rem;
   }
 
-  #page{
+  .homePage{
     width: fit-content;
     padding-top: 3rem;
     padding-left: 11.2rem;
@@ -405,8 +461,28 @@ main{
 
     width: 59.2rem;
     height: 54.1rem;
-    background: var(--background-secondary);
+    background: var(--background-home-secondary);
     border-radius: 20px;
     text-align: center;
+  }
+  
+  .aboutPage h2{
+    width: 54.5rem;
+    margin-top: 13.4rem;
+  
+    font-size: 4.8rem;
+    line-height: 5.28rem;
+  }
+  
+  .aboutPage .container{
+    width: 28rem;
+  }
+
+  .aboutPage .Filter{
+    width: 59.2rem;
+  }
+  
+  .aboutPage .Filter p{
+    width: 47.19rem;
   }
 }
