@@ -20,6 +20,7 @@
   --background-aboutPage: #ffffff;
   --background-div-aboutPage: #FDECED;
   --background-border-div-aboutPage: rgba(241, 81, 86, 0.3);
+  --background-imgPetsFriends: linear-gradient(180deg, #FDECED 0%, rgba(253, 236, 237, 0) 100%);
 }
 
 header{
@@ -259,6 +260,14 @@ header button img{
   text-align: center;
 }
 
+.aboutPage .imgPetsFriends{
+  overflow: hidden;
+}
+
+.aboutPage .imgPetsFriends img{
+  width: 58.4rem;
+}
+
 .hide{
   display: none;
 }
@@ -471,16 +480,48 @@ header button img{
     text-align: center;
   }
   
-  .aboutPage h2{
-    width: 54.5rem;
-    margin-top: 13.4rem;
-  
-    font-size: 4.8rem;
-    line-height: 5.28rem;
+  .aboutPage{
+    width: fit-content;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5.6rem;
   }
   
+  .containersAbout{
+    display: grid;
+    grid-template-areas: "A B"
+    "C C";
+    gap: 3.2rem;
+    margin-top: 3.9rem;
+  }
+    
+  
+  .containersAbout div:nth-child(1){
+    grid-area: A;
+  }
+
+  .containersAbout div:nth-child(2){
+    grid-area: B;
+  }
+
+  .containersAbout div:nth-child(3){
+    grid-area: C;
+  }
+  
+  .aboutPage h2{
+    width: 54.5rem;
+
+    margin-top: 9.8rem;
+    margin-left: 0;
+    font-size: 4.8rem;
+    line-height: 5.28rem;
+
+    text-align: left;
+  }
+
   .aboutPage .container{
     width: 28rem;
+    margin: 0 auto;
   }
 
   .aboutPage .Filter{
@@ -489,5 +530,20 @@ header button img{
   
   .aboutPage .Filter p{
     width: 47.19rem;
+  }
+
+  .aboutPage .imgPetsFriends{
+    width: 65.8rem;
+    height: 78.5rem;
+
+    margin-left: 2.3rem;
+
+    border-radius: 20px;
+    background: var(--background-imgPetsFriends); 
+  }
+
+  .aboutPage .imgPetsFriends img{
+    width: 65.8rem;
+    padding: 8.7rem 0.1rem 5.2rem;
   }
 }
