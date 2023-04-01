@@ -3,24 +3,29 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Nunito';
-  color: var(--text-color-home);
+  color: var(--text-color-primary);
 }
 
 :root{
   font-size: 62.5%;
+
+  --text-color-primary: #ffffff;
+  --text-color-acessButton: #0D3B66;
+  --background-buttons: #ffffff;
+
   --background-home-primary:#F15156;
   --background-home-secondary: #E44449;
-  --text-color-home: #ffffff;
-  --text-color-home-acessButton: #0D3B66;
   --background-home-bodyNavigation: linear-gradient(#F36A6F, #E44449);
-  --background-home-buttons: #ffffff;
 
   --text-color-aboutPage: #000000;
   --text-color-aboutPage-h2: #0D3B66;
   --background-aboutPage: #ffffff;
-  --background-div-aboutPage: #FDECED;
-  --background-border-div-aboutPage: rgba(241, 81, 86, 0.3);
-  --background-imgPetsFriends: linear-gradient(180deg, #FDECED 0%, rgba(253, 236, 237, 0) 100%);
+  --background-aboutPage-div: #FDECED;
+  --background-aboutPage-border-div: rgba(241, 81, 86, 0.3);
+  --background-aboutPage-imgPetsFriends: linear-gradient(180deg, #FDECED 0%, rgba(253, 236, 237, 0) 100%);
+
+  --background-animalsAvailable-primary: #F15156;
+  --text-color-animalsAvailable-h2: #F4D35E; 
 }
 
 header{
@@ -45,14 +50,13 @@ header button{
   border: none;
   border-radius: 8.33px;
 
-  background: var(--background-home-buttons);
+  background: var(--background-buttons);
 
   cursor: pointer;
 }
 
 header button:hover{
   transform: scale(1.1);
-  opacity: .92;
 }
 
 header button img{
@@ -162,13 +166,13 @@ header button img{
 }
 
 .containerTwo .acess{
-  width: 23.9rem;
+  width: 25.6rem;
   height: 5.5rem;
   font-size: 1.4rem;
   font-weight: 800;
   line-height: 1.5rem;
-  color: var(--text-color-home-acessButton);
-  background: var(--background-home-buttons);
+  color: var(--text-color-acessButton);
+  background: var(--background-buttons);
 
   border: none;
   border-radius: 8.66px;
@@ -179,7 +183,7 @@ header button img{
 }
 
 .containerTwo .acess:hover{
-  opacity: .92;
+  transform: scale(1.1);
 }
 
 .containerThree{
@@ -231,8 +235,8 @@ header button img{
 
   text-align: left;
 
-  background: var(--background-div-aboutPage);
-  border: 1px solid var(--background-border-div-aboutPage);
+  background: var(--background-aboutPage-div);
+  border: 1px solid var(--background-aboutPage-border-div);
   border-radius: 20px;
 
   display: flex;
@@ -246,7 +250,7 @@ header button img{
   font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: -0.02em;
-  line-height: 15.4px;
+  line-height: 1.54rem;
   color: var(--text-color-aboutPage);
 }
 
@@ -266,6 +270,90 @@ header button img{
 
 .aboutPage .imgPetsFriends img{
   width: 100vw;
+}
+
+.animalsAvailable{
+  width: 32rem;
+
+  margin: 0 2rem;
+  padding: 6rem 3.2rem;
+  background: var(--background-home-primary);
+
+  border-radius: 20px;
+}
+
+.animalsAvailableTitle h2{
+  font-weight: 700;
+  font-size: 3.0rem;
+  line-height: 2.7rem;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: var(--text-color-animalsAvailable-h2);
+}
+
+.animalsAvailableText p{
+  margin-top: 4rem;
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+
+  letter-spacing: -0.02em;
+}
+
+.buttonAcessAnimalsAvailable .acess{
+  width: 25.6rem;
+  height: 5.5rem;
+
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1.5rem;
+  color: var(--text-color-acessButton);
+  background: var(--background-buttons);
+
+  border: none;
+  border-radius: 8.66px;
+
+  cursor: pointer;
+}
+
+.buttonAcessAnimalsAvailable .acess:hover{
+  transform: scale(1.1);
+}
+
+.containersAnimalsAvailable{
+  display: flex;
+  gap: 1rem;
+}
+
+.containersAnimalsAvailable div{
+  width: 25.6rem;
+
+  margin-top: 3.1rem;
+
+  border-radius: 18.29px;
+  background: var(--text-color-primary);
+}
+
+.containersAnimalsAvailable div img{
+  width: 25.6rem;
+}
+
+.containersAnimalsAvailable div p{
+  padding-top: 1.33rem;
+  padding-bottom: 1.36rem;
+
+
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+
+  text-align: center;
+
+  color: var(--text-color-acessButton);
 }
 
 .hide{
@@ -539,11 +627,98 @@ header button img{
     margin-left: 2.3rem;
 
     border-radius: 20px;
-    background: var(--background-imgPetsFriends); 
+    background: var(--background-aboutPage-imgPetsFriends); 
   }
 
   .aboutPage .imgPetsFriends img{
     width: 65.8rem;
     padding: 8.7rem 0.1rem 5.2rem;
+  }
+
+  .animalsAvailable{
+    width: 121.6rem;
+    margin: 0 11.2rem;
+    padding: 6.9rem 10.4rem;
+
+    display: grid;
+    grid-template-areas: "A B"
+    "C D";
+    gap: 10.2rem;
+
+  }
+
+  .animalsAvailable div:nth-child(1){
+    grid-area: A;
+  }
+
+  .animalsAvailable div:nth-child(2){
+    grid-area: B;
+  }
+
+  .animalsAvailable div:nth-child(3){
+    grid-area: C;
+  }
+  
+  .animalsAvailable div:nth-child(4){
+    grid-area: D;
+  }
+  
+  .animalsAvailableTitle h2{
+    width: 41.6rem;
+    font-size: 4.8rem;
+    line-height: 4.3rem;
+  
+    text-align: left;
+  }
+  
+  .animalsAvailableText p{
+    width: 49rem;
+  
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  
+  .buttonAcessAnimalsAvailable{
+    margin-top: 1.4rem;
+  } 
+
+  .buttonAcessAnimalsAvailable .acess{
+    width: 23.1rem;
+  
+    font-size: 2rem;
+    line-height: 3.4rem;
+  
+    border-radius: 20px;
+  }
+  
+  .buttonAcessAnimalsAvailable .acess:hover{
+    transform: scale(1.1);
+  }
+  
+  .containersAnimalsAvailable{
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .containersAnimalsAvailable div{
+    width: 38.4rem;
+  
+    margin-top: -5.5rem;
+  
+    border-radius: 27.43px;
+  }
+  
+  .containersAnimalsAvailable div img{
+    width: 38.4rem;
+  }
+  
+  .containersAnimalsAvailable div p{
+    padding-top: 2rem;
+    padding-bottom: 1.9rem;
+  
+  
+    font-weight: 700;
+    font-size: 2.46rem;
+    line-height: 2.96rem;
   }
 }
