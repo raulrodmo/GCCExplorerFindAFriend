@@ -14,8 +14,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="./js/main.js" defer></script>
+
 </head>
 <body>
   <header>
@@ -78,34 +81,35 @@
     </div>
 
     <div class="aboutPage">
-      <div class="about">
-        <h2>Um app não, uma caixinha de amigos...</h2>
-        
-        <div class="containersAbout">
+      <div class="aboutContent">
+        <div class="about">
+          <h2>Um app não, uma caixinha de amigos...</h2>
+          
+          <div class="containersAbout">
 
-          <div class="container FindAFriend">
-            <img src="./assets/dog1.svg" alt="imagem de um filhote de cachorro">
-            <p>O <span>FindAFriend</span> é um produto desenvolvido para você encontrar
-              o animal de estimação ideal ao seu estilo de vida!</p>
+            <div class="container FindAFriend">
+              <img src="./assets/dog1.svg" alt="imagem de um filhote de cachorro">
+              <p>O <span>FindAFriend</span> é um produto desenvolvido para você encontrar
+                o animal de estimação ideal ao seu estilo de vida!</p>
+            </div>
+
+            <div class="container ONGs">
+              <img src="./assets/cat1.svg" alt="imagem de um gato">
+              <p><span>ONGs</span> cadastram os bichinhos disponíveis para adoção informando características como: porte, nível de energia, nível de independência, sociabilidade e gênero.</p>
+            </div>
+
+            <div class="container Filter">
+              <img src="./assets/dog2.svg" alt="imagem de um filhote de cachorro 2">
+              <p><span>Filtre os bichinhos</span> de acordo com suas preferências e lifestyle. Depois é só entrar em contato com a ONG para agendar uma visita e conhecer pessoalmente seu match perfeito!</p>
+            </div>
+
           </div>
-
-          <div class="container ONGs">
-            <img src="./assets/cat1.svg" alt="imagem de um gato">
-            <p><span>ONGs</span> cadastram os bichinhos disponíveis para adoção informando características como: porte, nível de energia, nível de independência, sociabilidade e gênero.</p>
-          </div>
-
-          <div class="container Filter">
-            <img src="./assets/dog2.svg" alt="imagem de um filhote de cachorro 2">
-            <p><span>Filtre os bichinhos</span> de acordo com suas preferências e lifestyle. Depois é só entrar em contato com a ONG para agendar uma visita e conhecer pessoalmente seu match perfeito!</p>
-          </div>
-
         </div>
-      </div>
 
-      <div class="imgPetsFriends">
-        <img src="./assets/petsFriends.svg" alt="">
-      </div>
-
+        <div class="imgPetsFriends">
+          <img src="./assets/petsFriends.svg" alt="">
+        </div>
+      </div>  
     </div>
 
     <div class="animalsAvailablePage">
@@ -123,21 +127,29 @@
         </div>
 
         <div class="containersAnimalsAvailable">
+          <div class="slidesAnimalsAvailable">
+            <div class="container Pet01">
+              <img src="./assets/petHamilton.svg" alt="imagem de um gato chamado Hamilton">
+              <p>Hamilton</p>
+            </div>
 
-          <div class="container Pet01">
-            <img src="./assets/petHamilton.svg" alt="imagem de um gato chamado Hamilton">
-            <p>Hamilton</p>
+            <div class="container Pet02">
+              <img src="./assets/petCleiton.svg" alt="imagem de um cachorro chamado Cleiton">
+              <p>Cleiton</p>
+            </div>
+
+            <div class="container Pet03">
+              <img src="./assets/petAldo.svg" alt="imagem de um gato chamado Aldo">
+              <p>Aldo</p>
+            </div>
           </div>
 
-          <div class="container Pet02">
-            <img src="./assets/petCleiton.svg" alt="imagem de um cachorro chamado Cleiton">
-            <p>Cleiton</p>
-          </div>
+          <div class="swiper-pagination"></div>
 
-          <div class="container Pet03">
-            <img src="./assets/petAldo.svg" alt="imagem de um gato chamado Aldo">
-            <p>Aldo</p>
-          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        
+          <div class="swiper-scrollbar"></div>
 
         </div>
 
