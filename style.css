@@ -8,6 +8,8 @@
 
 :root{
   font-size: 62.5%;
+  --swiper-navigation-size: 2.4rem !important;
+  --swiper-theme-color: #ffffff !important;
 
   --text-color-primary: #ffffff;
   --text-color-acessButton: #0D3B66;
@@ -328,29 +330,30 @@ header button img{
   transform: scale(1.1);
 }
 
-.containersAnimalsAvailable{
-  overflow: hidden;
+.swiper {
+  width: 26rem;
+  height: 24rem;
 }
 
-.slidesAnimalsAvailable{
-  display: flex;
-  gap: 1rem;
-}
-
-.slidesAnimalsAvailable .container{
-  width: 25.6rem;
-
+.swiper-slide{
   margin-top: 3.1rem;
 
   border-radius: 18.29px;
+}
+
+.swiper-slide div{
   background: var(--text-color-primary);
-}
-
-.slidesAnimalsAvailable .container img{
   width: 25.6rem;
+  height: 17.4rem;
+  border-radius: 18.2px;
 }
 
-.slidesAnimalsAvailable div p{
+.swiper-slide img{
+  width: 25.6rem;
+  margin: 0 auto;
+}
+
+.swiper-slide p{
   padding-top: 1.33rem;
   padding-bottom: 1.36rem;
 
@@ -364,14 +367,30 @@ header button img{
   color: var(--text-color-acessButton);
 }
 
+.swiper-button-prev, .swiper-button-next{
+  display: none !important;
+}
+/*
+
+.slidesAnimalsAvailable{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+*/
 .hide{
   display: none;
 }
 
 @media (min-width: 680px){
   header{
-    width: 73rem;
-    max-width: 73rem;
+    width: 77rem;
+    max-width: 77rem;
 
     margin-left: 11.2rem;
 
@@ -654,27 +673,13 @@ header button img{
     width: 121.6rem;
     margin: 2rem 11.2rem;
     padding: 6.9rem 10.4rem;
+  }
 
-    display: grid;
-    grid-template-areas: "A B"
-    "C D";
+  .animalsAvailableIntro{
+    display: flex;
     gap: 10.2rem;
-  }
 
-  .animalsAvailable div:nth-child(1){
-    grid-area: A;
-  }
-
-  .animalsAvailable div:nth-child(2){
-    grid-area: B;
-  }
-
-  .animalsAvailable div:nth-child(3){
-    grid-area: C;
-  }
-  
-  .animalsAvailable div:nth-child(4){
-    grid-area: D;
+    align-items: center;
   }
   
   .animalsAvailableTitle h2{
@@ -688,12 +693,23 @@ header button img{
   .animalsAvailableText p{
     width: 49rem;
   
+    margin-top: 0;
+
     font-size: 2rem;
     line-height: 2.2rem;
   }
   
+  .animalsAvailableSlider{
+    margin-top: 4.7rem;
+
+    display: flex;
+    gap: 18.5rem;
+
+    align-items: center;
+  }
+
   .buttonAcessAnimalsAvailable{
-    margin-top: 1.4rem;
+    margin-top: 0;
   } 
 
   .buttonAcessAnimalsAvailable .acess{
@@ -709,6 +725,58 @@ header button img{
     transform: scale(1.1);
   }
 
+  .swiper {
+    width: 60rem;
+    height: 35rem;
+  }
+  
+  .swiper-slide{
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .swiper-slide div{
+    width: 38.4rem;
+    height: 26.1rem;
+    border-radius: 27.43px;
+  }
+
+  .swiper-slide img{
+    width: 38.4rem;
+    margin: 0 auto;
+  }
+
+  .swiper-slide p{
+    padding-top: 2rem;
+    padding-bottom: 1.9rem;
+  
+  
+    font-weight: 700;
+    font-size: 2.46rem;
+    line-height: 2.96rem;
+  }
+
+  .swiper-button-prev, .swiper-button-next{
+    display: flex !important;
+
+    width: 7.2rem !important;
+    height: 7.2rem !important;
+
+    background: #ffffff;
+    color: black !important;
+
+    border: 1px solid wheat;
+    border-radius: 15px;
+  }
+
+  .swiper-button-disabled{
+    opacity: 1 !important;
+    background: transparent;
+    color: white !important;
+  }
+
+/*
   .slidesAnimalsAvailable .container{
     width: 38.4rem;
   
@@ -728,5 +796,5 @@ header button img{
     font-size: 2.46rem;
     line-height: 2.96rem;
   }
-
+*/
 }
