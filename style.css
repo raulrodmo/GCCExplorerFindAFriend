@@ -370,19 +370,7 @@ header button img{
 .swiper-button-prev, .swiper-button-next{
   display: none !important;
 }
-/*
 
-.slidesAnimalsAvailable{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-
-
-
-*/
 .hide{
   display: none;
 }
@@ -775,26 +763,4 @@ header button img{
     background: transparent;
     color: white !important;
   }
-
-/*
-  .slidesAnimalsAvailable .container{
-    width: 38.4rem;
-  
-    border-radius: 27.43px;
-  }
-  
-  .slidesAnimalsAvailable .container img{
-    width: 38.4rem;
-  }
-  
-  .slidesAnimalsAvailable div p{
-    padding-top: 2rem;
-    padding-bottom: 1.9rem;
-  
-  
-    font-weight: 700;
-    font-size: 2.46rem;
-    line-height: 2.96rem;
-  }
-*/
 }
