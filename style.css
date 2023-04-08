@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: 'Nunito';
   color: var(--text-color-primary);
+  font-weight: 400;
+  letter-spacing: -0.02em;
 }
 
 :root{
@@ -28,6 +30,14 @@
 
   --background-animalsAvailable-primary: #F15156;
   --text-color-animalsAvailable-h2: #F4D35E; 
+
+  --background-teamMember: #FDECED;
+  --background-contact: #0D3B66;
+  --text-color-aboutFindAFriendAndContact: #0D3B66;
+  --text-color-aboutFindAFriendAndContact-h2: #ffffff;
+  --text-color-aboutFindAFriendAndContact-secondary: #F4D35E;
+
+  --text-color-footer: #ffffff;
 }
 
 header{
@@ -94,7 +104,6 @@ header button img{
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.98rem;
-  letter-spacing: -0.02em;
   opacity: 0.5;
 }
 
@@ -104,7 +113,7 @@ header button img{
 }
 
 .homePage{
-  width: 100vw;
+  width: 100%;
   background: var(--background-home-primary);
 }
 
@@ -115,7 +124,6 @@ header button img{
 .friendsInCity p{
   margin-top: 1rem;
   font-size: 1.4rem;
-  font-weight: 400;
   line-height: 1.68rem;
 }
 
@@ -130,7 +138,6 @@ header button img{
   font-size: 4.4rem;
   font-weight: 700;
   line-height: 4.8rem;
-  letter-spacing: -0.02em;
 }
 
 .textBody p{
@@ -254,8 +261,6 @@ header button img{
 .aboutPage .container p{
   width: 22.3rem;
   font-size: 1.4rem;
-  font-weight: 400;
-  letter-spacing: -0.02em;
   line-height: 1.54rem;
   color: var(--text-color-aboutPage);
 }
@@ -270,12 +275,8 @@ header button img{
   text-align: center;
 }
 
-.aboutContent .imgPetsFriends{
-  overflow: hidden;
-}
-
 .aboutContent .imgPetsFriends img{
-  width: 100vw;
+  width: 100%;
 }
 
 .animalsAvailable{
@@ -294,7 +295,6 @@ header button img{
   line-height: 2.7rem;
 
   text-align: center;
-  letter-spacing: -0.02em;
 
   color: var(--text-color-animalsAvailable-h2);
 }
@@ -302,11 +302,12 @@ header button img{
 .animalsAvailableText p{
   margin-top: 4rem;
 
-  font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.8rem;
+}
 
-  letter-spacing: -0.02em;
+.buttonAcessAnimalsAvailable{
+  text-align: center;
 }
 
 .buttonAcessAnimalsAvailable .acess{
@@ -330,35 +331,34 @@ header button img{
   transform: scale(1.1);
 }
 
-.swiper {
+.containersAnimalsAvailable {
   width: 26rem;
   height: 24rem;
 }
 
-.swiper-slide{
+.pets{
   margin-top: 3.1rem;
 
   border-radius: 18.29px;
 }
 
-.swiper-slide div{
-  background: var(--text-color-primary);
+.pets div{
   width: 25.6rem;
   height: 17.4rem;
   border-radius: 18.2px;
+
+  background: var(--text-color-primary);
 }
 
-.swiper-slide img{
+.pets img{
   width: 25.6rem;
   margin: 0 auto;
 }
 
-.swiper-slide p{
+.pets p{
   padding-top: 1.33rem;
   padding-bottom: 1.36rem;
 
-
-  font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.9rem;
 
@@ -371,17 +371,161 @@ header button img{
   display: none !important;
 }
 
+.aboutFindAFriendAndContact{
+  width: 100%;
+}
+
+.textAboutFindAFriend{
+  margin: 3rem 2rem 0;
+}
+
+.textAboutFindAFriend h2{
+  width: 20rem;
+
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 33px;
+
+  color: var(--text-color-aboutFindAFriendAndContact);
+}
+
+.textAboutFindAFriend p{
+  margin-top: 2rem;
+  font-size: 2rem;
+  line-height: 22px;
+
+  color: var(--text-color-aboutFindAFriendAndContact);
+}
+
+.team{
+  margin: 6rem 2rem 0 2rem !important;
+}
+
+.teamMembers{
+  gap: 1rem;
+}
+
+.teamMember{
+  width: 27.8rem !important;
+}
+
+.teamMember div{
+  width: 27.8rem;
+  height: 28.4rem;
+  border-radius: 20px;
+
+  background: var(--background-teamMember);
+}
+
+.teamMember img{
+  width: 25.8rem;
+  margin: 1rem;
+}
+
+.teamMember p{
+  margin-top: 1.2rem;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.16rem;
+
+  text-align: center;
+
+  color: var(--text-color-aboutFindAFriendAndContact);
+}
+
+.teamMember p span{
+  font-weight: 400;
+
+  color: var(--text-color-aboutFindAFriendAndContact);
+}
+
+.contact{
+  min-width: 32rem;
+  background: var(--background-contact);
+  margin: 5.3rem 2rem 3.4rem;
+  padding-bottom: 7.2rem;
+  border-radius: 10px;
+}
+
+.imgContact{
+  text-align: right;
+}
+
+.contact img{
+  width: 32rem;
+  margin-top: -1.3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact h2{
+  width: 15.1rem;
+
+  margin-top: -5rem;
+  margin-left: 3.2rem;
+  margin-bottom: 2.1rem;
+
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.3rem;
+}
+
+.sendEmail{
+  margin-left: 3.2rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.sendEmail img{
+  margin-right: .9rem;
+  width: 1.66rem;
+}
+
+.sendEmail p{
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.54rem;
+
+  color: var(--text-color-aboutFindAFriendAndContact-secondary);
+}
+
+footer{
+  background-color: var(--background-home-primary);
+  text-align: center;
+  padding: 4rem 0 5rem;
+}
+
+footer img{
+  margin-bottom: 4.8rem;
+}
+
+.footerLogoFull{
+  display: none;
+}
+
+.textFooter{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+footer p{
+  font-size: 1.5rem;
+  line-height: 1.54rem;
+}
+
 .hide{
   display: none;
 }
 
 @media (min-width: 680px){
   header{
-    width: 77rem;
-    max-width: 77rem;
+    min-width: 134rem;
+    width: 100%;
 
-    margin-left: 11.2rem;
-
+    display: flex;
     background: none;
     position: absolute;
     top: 9.3rem;
@@ -391,7 +535,7 @@ header button img{
   header .logo{
     width: 17.7rem;
     height: 4.61rem;
-    margin-left: 0;
+    margin-left: 8rem;
   }
   
   .navMenu{
@@ -401,7 +545,7 @@ header button img{
 
     position: absolute;
     top: -2rem;
-    left: 68rem;
+    left: 82rem;
     z-index: -1;
 
     gap: 1.6rem;
@@ -420,17 +564,21 @@ header button img{
   }
 
   .homePage{
-    width: fit-content;
+    width: 100%;
+    margin: 0 auto;
     padding-top: 3rem;
-    padding-left: 11.2rem;
+    padding-left: 7rem;
     display: flex;
-    gap: 10.4rem;
+    justify-content: space-between;
+    gap: 4.8rem;
+    overflow: hidden;
   }
 
   header button{
     width: 7.2rem;
     height: 7.2rem;
 
+    margin-right: 61rem;
     border: none;
     border-radius: 15px;
   
@@ -459,7 +607,6 @@ header button img{
 
   .friendsInCity p{
     font-size: 1.6rem;
-    font-weight: 400;
     line-height: 3.4rem;
   }
 
@@ -490,7 +637,7 @@ header button img{
     "C A"
     "D E";
     gap: 2rem;
-    margin-top: 3rem;
+    margin: 3rem 0 0;
   }
   
 
@@ -584,19 +731,29 @@ header button img{
   }
   
   .aboutPage{
-    width: 100vw;
+    width: 100%;
   }
 
   .aboutContent{
-    width: fit-content;
+    width: 100%;
+    min-width: 121.6rem;
+    max-width: 100%;
 
-    margin: 0 11.2rem 0 2.4rem;
     display: flex;
     flex-direction: row-reverse;
-    gap: 5.3rem;
-    overflow: visible;
+    justify-content: space-between;
+    gap: 5.4rem;
+    overflow: hidden;
   }
   
+  .aboutContent div {
+    margin: 3.6rem 0 0;
+  }
+
+  .aboutContent .about {
+    margin: 0 10rem 0 0;
+  }
+
   .containersAbout{
     display: grid;
     grid-template-areas: "A B"
@@ -642,31 +799,29 @@ header button img{
   }
 
   .aboutContent .imgPetsFriends{
-    width: 65.8rem;
+    width: 60rem;
     height: 78.5rem;
 
-    overflow: visible;
-    margin-left: 0;
-
+    margin-left: 2.4rem;
+    
     border-radius: 20px;
     background: var(--background-aboutPage-imgPetsFriends); 
   }
 
   .aboutContent .imgPetsFriends img{
-    width: 65.8rem;
     padding: 8.7rem 0.1rem 5.2rem;
   }
 
   .animalsAvailable{
-    width: 121.6rem;
-    margin: 2rem 11.2rem;
+    width: 98%;
+    min-width: 121.6rem;
     padding: 6.9rem 10.4rem;
   }
 
   .animalsAvailableIntro{
     display: flex;
     gap: 10.2rem;
-
+    justify-content: space-between;
     align-items: center;
   }
   
@@ -692,12 +847,13 @@ header button img{
 
     display: flex;
     gap: 18.5rem;
-
+    justify-content: space-between;
     align-items: center;
   }
 
   .buttonAcessAnimalsAvailable{
     margin-top: 0;
+    text-align: left;
   } 
 
   .buttonAcessAnimalsAvailable .acess{
@@ -708,34 +864,30 @@ header button img{
   
     border-radius: 20px;
   }
-  
-  .buttonAcessAnimalsAvailable .acess:hover{
-    transform: scale(1.1);
-  }
 
-  .swiper {
+  .containersAnimalsAvailable {
     width: 60rem;
     height: 35rem;
   }
   
-  .swiper-slide{
+  .pets{
     display: flex !important;
     align-items: center;
     flex-direction: column;
   }
   
-  .swiper-slide div{
+  .pets div{
     width: 38.4rem;
     height: 26.1rem;
     border-radius: 27.43px;
   }
 
-  .swiper-slide img{
+  .pets img{
     width: 38.4rem;
     margin: 0 auto;
   }
 
-  .swiper-slide p{
+  .pets p{
     padding-top: 2rem;
     padding-bottom: 1.9rem;
   
@@ -743,6 +895,10 @@ header button img{
     font-weight: 700;
     font-size: 2.46rem;
     line-height: 2.96rem;
+  }
+  
+  .swiper, swiper-container {
+    margin-right: 0 !important;
   }
 
   .swiper-button-prev, .swiper-button-next{

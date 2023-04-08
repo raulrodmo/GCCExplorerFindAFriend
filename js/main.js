@@ -19,7 +19,7 @@ closeMenu.addEventListener('click', function() {
   navMenu.classList.add("hide")
 })
 
-const swiper = new Swiper('.swiper', {
+const swiperOne = new Swiper('.containersAnimalsAvailable', {
   // Optional parameters
   slidesPerView: "auto",
   direction: 'horizontal',
@@ -35,6 +35,11 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+});
 
-  // And if we need scrollbar
+const swipertwo = new Swiper('.team', {
+  // Optional parameters
+  slidesPerView: "auto",
+  direction: 'horizontal',
+  loop: true,
 });
