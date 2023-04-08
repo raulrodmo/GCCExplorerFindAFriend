@@ -226,6 +226,7 @@ header button img{
   max-width: 143.9rem;
   margin: 0 auto;
 
+  padding-bottom: 2rem;
   background: var(--background-aboutPage);
   color: var(--text-color-aboutPage);
 }
@@ -236,7 +237,7 @@ header button img{
 
   font-size: 3rem;
   font-weight: 700;
-  line-height: 110%;
+  line-height: 5.3rem;
   color: var(--text-color-aboutPage-h2);
 }
 
@@ -279,10 +280,14 @@ header button img{
   width: 100%;
 }
 
+.animalsAvailablePage{
+  background: var(--background-aboutPage);
+}
+
 .animalsAvailable{
   min-width: 32rem;
   width: 75vw;
-  margin: 2rem auto;
+  margin: -1px auto;
   padding: 6rem 3.2rem;
   background: var(--background-home-primary);
 
@@ -373,10 +378,11 @@ header button img{
 
 .aboutFindAFriendAndContact{
   width: 100%;
+  background: var(--background-aboutPage);
 }
 
 .textAboutFindAFriend{
-  margin: 3rem 2rem 0;
+  margin: 0 2rem 0;
 }
 
 .textAboutFindAFriend h2{
@@ -384,7 +390,7 @@ header button img{
 
   font-size: 3rem;
   font-weight: 700;
-  line-height: 33px;
+  line-height: 3.3rem;
 
   color: var(--text-color-aboutFindAFriendAndContact);
 }
@@ -392,7 +398,7 @@ header button img{
 .textAboutFindAFriend p{
   margin-top: 2rem;
   font-size: 2rem;
-  line-height: 22px;
+  line-height: 2.2rem;
 
   color: var(--text-color-aboutFindAFriendAndContact);
 }
@@ -403,6 +409,7 @@ header button img{
 
 .teamMembers{
   gap: 1rem;
+  margin: 0 auto;
 }
 
 .teamMember{
@@ -450,13 +457,12 @@ header button img{
 
 .imgContact{
   text-align: right;
+  overflow: hidden;
 }
 
-.contact img{
+.imgContact img{
   width: 32rem;
   margin-top: -1.3rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .contact h2{
@@ -464,7 +470,6 @@ header button img{
 
   margin-top: -5rem;
   margin-left: 3.2rem;
-  margin-bottom: 2.1rem;
 
   font-size: 3rem;
   font-weight: 700;
@@ -522,7 +527,7 @@ footer p{
 
 @media (min-width: 680px){
   header{
-    min-width: 134rem;
+    min-width: 138rem;
     width: 100%;
 
     display: flex;
@@ -565,6 +570,7 @@ footer p{
 
   .homePage{
     width: 100%;
+    min-width: 121.6rem;
     margin: 0 auto;
     padding-top: 3rem;
     padding-left: 7rem;
@@ -918,5 +924,110 @@ footer p{
     opacity: 1 !important;
     background: transparent;
     color: white !important;
+  }
+
+  .aboutFindAFriendAndContact{
+    min-width: 121.6rem;
+  }
+
+  .aboutFindAFriend{
+    padding: 7rem 6rem 14rem;
+  }
+
+  .textAboutFindAFriend{
+    display: flex;
+    align-items: center;
+    gap: 4.4rem;
+  }
+  
+  .textAboutFindAFriend h2{
+    width: 26.8rem;
+  
+    font-size: 4.8rem;
+    line-height: 4.32rem;
+  }
+  
+  .textAboutFindAFriend p{
+    width: 69.2rem;
+  }
+  
+  .team{
+    margin: 6rem 0 0!important;;
+  }
+  
+  .teamMembers{
+    gap: 3.2rem;
+    justify-content: center;
+  }
+  
+  .contact{
+    border-radius: 20px;
+    padding-bottom: 0;
+    margin: 0 5rem;
+  }
+
+  .imgContact img{
+    width: 113.4rem;
+    margin-top: -4.7rem;
+  }
+  
+  .contact h2{
+    width: 25.1rem;
+  
+    margin-top: -35rem;
+    margin-left: auto;
+    margin-right: 87.9rem;
+    margin-bottom: 3.4rem;
+  
+    font-size: 4.8rem;
+    line-height: 4.32rem;
+  }
+  
+  .sendEmail{
+    width: 22rem;
+
+    margin-right: 90.7rem;
+    margin-left: auto;
+  
+    display: flex;
+    align-items: start;
+    gap: .56rem;
+  }
+  
+  .sendEmail img{
+    margin-right: .9rem;
+    width: 1.66rem;
+  }
+  
+  .sendEmail p{
+    margin-bottom: 5.2rem;
+
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  
+  footer{
+    margin-top: 17.5rem;
+    text-align: center;
+    padding: 4rem 0 5rem;
+  }
+  
+  footer img{
+    margin-bottom: 4.8rem;
+  }
+  
+  .footerLogoFull{
+    display: none;
+  }
+  
+  .textFooter{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  footer p{
+    font-size: 1.5rem;
+    line-height: 1.54rem;
   }
 }
