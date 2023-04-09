@@ -469,6 +469,7 @@ header button img{
   width: 15.1rem;
 
   margin-top: -5rem;
+  margin-bottom: 1.8rem;
   margin-left: 3.2rem;
 
   font-size: 3rem;
@@ -476,7 +477,9 @@ header button img{
   line-height: 3.3rem;
 }
 
-.sendEmail{
+.sendEmail a{
+  text-decoration: none;
+
   margin-left: 3.2rem;
 
   display: flex;
@@ -502,7 +505,7 @@ footer{
   padding: 4rem 0 5rem;
 }
 
-footer img{
+.footerLogo{
   margin-bottom: 4.8rem;
 }
 
@@ -527,10 +530,8 @@ footer p{
 
 @media (min-width: 680px){
   header{
-    min-width: 138rem;
-    width: 100%;
-
     display: flex;
+    justify-content: normal;
     background: none;
     position: absolute;
     top: 9.3rem;
@@ -575,7 +576,6 @@ footer p{
     padding-top: 3rem;
     padding-left: 7rem;
     display: flex;
-    justify-content: space-between;
     gap: 4.8rem;
     overflow: hidden;
   }
@@ -584,7 +584,7 @@ footer p{
     width: 7.2rem;
     height: 7.2rem;
 
-    margin-right: 61rem;
+    margin-left: 44rem;
     border: none;
     border-radius: 15px;
   
@@ -672,7 +672,6 @@ footer p{
   }
 
   .containerOne{
-    width: 11.2rem;
     height: 71.2rem;
     border-radius: 20px 0 0 20px;
     right: 0rem;
@@ -720,7 +719,6 @@ footer p{
   .containerFive{
     display: block;
 
-    width: 11.2rem;
     height: 5.8rem;
 
     border-radius: 20px 0 0 0;
@@ -983,7 +981,8 @@ footer p{
     line-height: 4.32rem;
   }
   
-  .sendEmail{
+  .sendEmail a{
+    text-decoration: none;
     width: 22rem;
 
     margin-right: 90.7rem;
@@ -1007,27 +1006,28 @@ footer p{
   }
   
   footer{
+    min-width: 121.6rem;
+    height: 10rem;
     margin-top: 17.5rem;
+    padding: 0 11.2rem;
     text-align: center;
-    padding: 4rem 0 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
-  
-  footer img{
-    margin-bottom: 4.8rem;
-  }
-  
-  .footerLogoFull{
+
+  .footerLogo{
     display: none;
   }
-  
-  .textFooter{
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
+
+  .footerLogoFull{
+    width: 17.7rem;
+    display: block;
   }
   
   footer p{
-    font-size: 1.5rem;
-    line-height: 1.54rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
   }
 }
