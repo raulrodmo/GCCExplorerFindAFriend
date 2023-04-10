@@ -382,7 +382,7 @@ header button img{
 }
 
 .textAboutFindAFriend{
-  margin: 0 2rem 0;
+  margin: 3rem 2rem 0;
 }
 
 .textAboutFindAFriend h2{
@@ -933,6 +933,7 @@ footer p{
   }
 
   .textAboutFindAFriend{
+    margin: 0;
     display: flex;
     align-items: center;
     gap: 4.4rem;
