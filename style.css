@@ -76,7 +76,7 @@ header button img{
   height: 1.6rem;
 }
 
-.navMenu{
+.navMenuMobile{
   width: 100vw;
   height: 20.3rem;
 
@@ -91,12 +91,12 @@ header button img{
   left: 0;
 }
 
-.navMenu div{
+.navMenuMobile div{
   margin: .5rem 2.5rem 1.5rem 2.5rem;
   border: 1px solid #FFFFFF;
 }
 
-.navMenu a{
+.navMenuMobile a{
   margin-left: 2rem;
   margin-right: 2rem;
 
@@ -107,9 +107,13 @@ header button img{
   opacity: 0.5;
 }
 
-.navMenu a:hover{
+.navMenuMobile a:hover{
   transform: scale(1.03);
   opacity: 1;
+}
+
+.navMenuDesktop{
+  display: none;
 }
 
 .homePage{
@@ -530,52 +534,59 @@ footer p{
 
 @media (min-width: 680px){
   header{
+    width: 100%;
+    min-width: 121.6rem;
     display: flex;
-    justify-content: normal;
-    background: none;
-    position: absolute;
-    top: 9.3rem;
-    z-index: 1;
+    justify-content: space-between;
+    background: var(--background-home-primary);
+    position: fixed;
+    z-index: 2;
   }
 
   header .logo{
     width: 17.7rem;
     height: 4.61rem;
-    margin-left: 8rem;
+    margin-left: 9rem;
   }
   
-  .navMenu{
-    width: 50rem;
-    height: 52.8rem;
-    padding-top: 15rem;
-
-    position: absolute;
-    top: -2rem;
-    left: 72rem;
-    z-index: -1;
-
-    gap: 1.6rem;
-  }
-
-  .navMenu div{ 
+  header button{
     display: none;
   }
 
-  .navMenu a{
-    margin-left: 0;
+  .navMenuDesktop{
+    margin-right: 10rem;
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+  }
 
-    font-size: 3.6rem;
-    font-weight: 700;
-    line-height: 3.96rem;
+  .navMenuDesktop a{
+    text-decoration: none;
+
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2rem;
+    opacity: 0.5;
+  }
+
+  .navMenuDesktop a:hover{
+    transform: scale(1.1);
+    opacity: 1;
+  }
+
+  .navMenuDesktop .selected{
+    transform: scale(1.1);
+    opacity: 1;
   }
 
   .homePage{
     width: 100%;
     min-width: 121.6rem;
     margin: 0 auto;
-    padding-top: 3rem;
+    padding-top: 20rem;
     padding-left: 7rem;
     display: flex;
+    justify-content: space-between;
     gap: 4.8rem;
     overflow: hidden;
   }
@@ -601,7 +612,7 @@ footer p{
   }
 
   .friendsInCity{
-    margin-top: 20rem;
+    margin-top: 3rem;
 
     display: flex;
     align-items: center;
@@ -643,6 +654,7 @@ footer p{
     "C A"
     "D E";
     gap: 2rem;
+    grid-row-gap: 2rem;
     margin: 3rem 0 0;
   }
   
@@ -667,44 +679,39 @@ footer p{
     grid-area: E;
   }
 
-  .containers div:nth-child(6){
-    grid-area: B;
-  }
-
   .containerOne{
-    height: 71.2rem;
+    height: 55rem;
     border-radius: 20px 0 0 20px;
     right: 0rem;
   }
 
   .containerTwo{
     width: 59.2rem;
-    height: 54.1rem;
+    height: 38rem;
     margin: 0;
   }
 
   .containerTwo .imgPet{
     width: 46.4rem;
-    height: 54.1rem;
-    bottom: 0;
+    height: 54rem;
+    bottom: 16rem;
   }
 
   .containerTwo .acess{
     width: 49.2rem;
-    height: 7.2rem;
+    height: 7rem;
     font-size: 2rem;
     line-height: 3.4rem;
 
-    top: 5.5rem;
+    bottom: 10.5rem;
     border-radius: 20px;
   }
 
   .containerThree{
     width: 59.2rem;
 
-    height: 15.2rem;
+    height: 15rem;
     border-radius: 20px;
-    right: 0rem;
   }
 
   .containerFour{
@@ -724,16 +731,6 @@ footer p{
     border-radius: 20px 0 0 0;
   }
 
-  .containerSix{
-    display: block;
-
-    width: 59.2rem;
-    height: 54.1rem;
-    background: var(--background-home-secondary);
-    border-radius: 20px;
-    text-align: center;
-  }
-  
   .aboutPage{
     width: 100%;
   }
