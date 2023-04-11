@@ -34,7 +34,7 @@ Depois é só entrar em contato com a ONG para agendar uma visita e conhecer pes
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.figma.com/file/mdjTYxImijoaWBrgilPnPc/GCC-1-FindAFriend-Community?is-community-duplicate=1&fuid=). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/mdjTYxImijoaWBrgilPnPc/GCC-1-FindAFriend-Community?is-community-duplicate=1&fuid=). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ---
 
